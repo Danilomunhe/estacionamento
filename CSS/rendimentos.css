@@ -1,0 +1,109 @@
+body{
+    background-image: url("../imagens/fundo2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-blend-mode: darken;
+    background-color: #00000050;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+h2{
+    font-size: 3rem;
+    color: black;
+    font-style: bold;
+    text-align: left;
+}
+.titulo{
+    width: 80%;
+    height: 80%;
+    background-color: #80808070;
+    background-blend-mode: darken;
+    border-radius: 10px;
+    display: flex;
+    align-items: center ;
+}
+.icone-rendimentos{
+    width: 8%;
+    height: 70%;
+}
+.icone-rendimentos img{
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+.titulo-texto{
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tipos-rendimentos{
+    width: 80%;
+    height: 10%;
+    background-color: #000;
+    display: flex;
+    margin-top: 5%;
+    border-radius: 100px;
+}
+.tipo-rendimento{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 2px #fff;
+}
+.tipo-rendimento:nth-child(1){
+    border-left: none;
+}
+.tipo-rendimento a{
+    color: #fff;
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+}
+.tipo-rendimento a:hover{
+    color: #ffe600;
+}
+
+.tabela-relatorio{
+    min-height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+table{
+    width: 90%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+td{
+    border:5px solid #000;
+    border-radius: 10px;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
