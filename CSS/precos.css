@@ -8,7 +8,7 @@ body{
     background-blend-mode: darken;
     background-color: #00000050;
 }
-header{
+.titulo-section{
     width: 100%;
     height: 20%;
     display: flex;
@@ -134,4 +134,89 @@ main{
 .botao input:hover{
     background-color: #ffe600;
     color: #000;
+}
+.modal-container{
+    /* opacity: 0; */
+    position: fixed;
+    left: 0;
+    top: 1000px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: all 2s linear;
+}
+.modal-container.active{
+    /* opacity: 1; */
+    z-index: 1;
+    top: 0;
+}
+.modal-content{
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+}
+.campos{
+    height: 80px;
+    width: 400px;
+    display: flex;
+}
+.campos label{
+    font-size: 2rem;
+    color: #000;
+    width: 50%;
+}
+.campos input{
+    width: 100%;
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: #000 solid 1px;
+    transition: all 1s linear;
+    font-size: 2rem;
+}
+.campos input:focus{
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+.botao-form{
+    width: 240px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.botao-form input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: #808080;
+    transition: all 1s linear;
+}
+.botao-form input:hover{
+    cursor: pointer;
+    background-color: #ffe600;
+}
+
+.botao-modal{
+    width: 240px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #808080;
+    transition: all 1s linear;
+}
+.botao-modal:hover{
+    cursor: pointer;
+    background-color: #ffe600;
 }

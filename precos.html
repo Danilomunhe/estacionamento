@@ -6,12 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/precos.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <script src="abrirModal.js" defer></script>
     <title>Preços</title>
 </head>
 <body>
     <header>
+        <div class="menu-burger-container">
+          <i class="menu-burger"></i>
+        </div>
+        <nav class="menu">
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="precos.html">Preços</a>
+            </li>
+            <li>
+              <a href="cadastro.html">Cadastro</a>
+            </li>
+            <li><a href="rendimentos.html">Rendimentos</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="titulo-section">
         <div class="titulo"><h2>Tabela de Preços</h2></div>
-    </header>
+    </div>
     <main>
        <div class="caixa-container-precos">
         <div class="container-precos">
@@ -40,12 +59,35 @@
                     </div>
                 </div>
                 <div class="botao">
-                    <input type="button" value="Editar Preços">
+                    <input type="button" value="Editar Preços" id="abrir-modal">
                 </div>
             </div>
         </div>
        </div>
-       
+       <div class="modal-container" id="modal">
+        <div class="modal-content">
+            <header>
+                <h2>Tabela de preços</h2>
+            </header>
+            <form>
+                <div class="campos">
+                    <label>1 hora:</label>
+                    <input type="text">
+                </div>
+                <div class="campos">
+                     <label>Demais Horas:</label>
+                    <input type="text">
+                </div> 
+                <div class="botao-form">
+                    <input type="submit" value="Salvar">
+                </div>
+                <button class="botao-modal" id="fechar-modal">Sair</button>
+            </form>
+            <footer>
+                
+            </footer>
+        </div>
+    </div>
     </main>
 </body>
 </html>

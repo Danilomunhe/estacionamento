@@ -6,11 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/rendimentos.css">
+    <link rel="stylesheet" href="CSS/menu.css">
     <script src="abrirModal.js" defer></script>
     <title>Rendimentos</title>
 </head>
 <body>
     <header>
+        <div class="menu-burger-container">
+          <i class="menu-burger"></i>
+        </div>
+        <nav class="menu">
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="precos.html">Preços</a>
+            </li>
+            <li>
+              <a href="cadastro.html">Cadastro</a>
+            </li>
+            <li><a href="rendimentos.html">Rendimentos</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="titulo-section">
         <div class="titulo">
             <div class="icone-rendimentos">
                 <img src="imagens/fina.png" alt="">
@@ -19,7 +37,7 @@
                 <h2>Rendimentos</h2>
             </div>
         </div>
-    </header>
+    </div>
     <main>
         <div class="tipos-rendimentos">
             <div class="tipo-rendimento" id="abrir-modal">

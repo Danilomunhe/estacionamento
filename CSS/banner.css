@@ -58,7 +58,13 @@ main{
     justify-content: center;
     align-items: center;
 }
-.informacao h2{
+.informacao a{
     font-size: 2rem;
     color: #000000;
+    text-decoration: none;
+    transition: all 1s linear;
+}
+.informacao a:hover{
+    color: #ffe600;
+    transform: scale(110%);
 }

@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-header{
+.titulo-section{
     width: 100%;
     height: 15vh;
     display: flex;
