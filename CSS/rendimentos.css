@@ -74,12 +74,13 @@ main{
 .tipo-rendimento:nth-child(1){
     border-left: none;
 }
-.tipo-rendimento a{
+.tipo-rendimento h3{
     color: #fff;
     font-size: 3rem;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
-.tipo-rendimento a:hover{
+.tipo-rendimento h3:hover{
     color: #ffe600;
 }
 
@@ -108,6 +109,7 @@ table{
     justify-content: center;
     align-items: center;
     overflow-y: auto;
+    display: none;
 }
 
 td{
@@ -118,4 +120,56 @@ td{
     text-align: center;
     font-size: 2rem;
     color: #000;
+}
+.formulario{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #80808090;
+    background-blend-mode: lighten;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0;
+    z-index: -999; */
+    display: none;
+    transition: all 1s linear;
+}
+.formulario-diario h3{
+    font-size: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.campos{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.campos input{
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+.campos input:hover{
+    background-color: #ffe600;
+}
+.active{
+    /* opacity: 1;
+    z-index: 1; */
+    display: flex;
 }
