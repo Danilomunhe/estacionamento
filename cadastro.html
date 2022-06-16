@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/casdastro.css">
     <link rel="stylesheet" href="./CSS/menu.css">
     <script src="./JS/menu.js" defer></script>
+    <script src="./JS/apiCadastro.js" defer></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
     <main>
         <div class="caixa-container-cadastro">
             <div class="container-cadastro">
-                <form action="">
+                <form action="" method="post" enctype="multipart/form-data">
                     <div class="campos">
                         <label>Nome:</label>
                         <input type="text" name="nome" id="nome">
@@ -59,14 +60,14 @@
                     </div>
                     <div class="campos">
                         <label>Entrada:</label>
-                        <input type="datetime-local" name="entrada" id="entrada">
+                        <input type="time" name="entrada" id="entrada">
                     </div>
                     <div class="campos">
                         <label>Sáida:</label>
-                        <input type="datetime-local" name="saida" id="saida">
+                        <input type="time" name="saida" id="saida">
                     </div>
                     <div class="botao">
-                        <input type="submit" value="Salvar" id="botao-salvar">
+                        <input type="button" value="Salvar" id="botao-salvar">
                     </div>
                 </form>
             </div>

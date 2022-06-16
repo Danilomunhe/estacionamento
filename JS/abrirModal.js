@@ -10,5 +10,9 @@ const fecharModal = ()=>{
     modal.classList.remove('active')
 }
 
-document.getElementById('abrir-modal').addEventListener('click', abrirModal)
 document.getElementById('fechar-modal').addEventListener('click', fecharModal)
+
+export{
+    abrirModal, 
+    fecharModal
+}
